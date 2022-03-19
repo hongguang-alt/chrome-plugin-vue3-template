@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "hg-working",
+    "description": "这是工作台插件",
+    "version": "1.0.0",
+    "permissions": [],
+    "background": {
+        "scripts": [
+            "js/background.js"
+        ]
+    },
+    "icons": {
+        "16": "img/logo.png",
+        "48": "img/logo.png",
+        "128": "img/logo.png"
+    },
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+    "web_accessible_resources": [
+        "*"
+    ],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
